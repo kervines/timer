@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: 'Roboto';
 }
 
 body {
-  width: 100vw;
   height: 100vh;
 
   display: flex;
@@ -18,7 +17,7 @@ body {
 }
 
 .night {
-  background: linear-gradient(to top, #1f2130, #5e69a6 60%);
+  background: linear-gradient(to top, #101432, #545d91 60%);
 }
 
 .title {
@@ -27,31 +26,40 @@ body {
 
 .timerContainer {
   display: flex;
-  gap: 10px;
-}
+  gap: 20px;
+  width: 800px;
+  height: 280px;
 
-.hours,
-.minutes,
-.seconds,
-.am-pm {
-  padding: 10px;
   border-radius: 10px;
-  box-shadow: 21px 20px 20px -11px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 10px 3px rgba(0, 0, 0, 0.5);
+
+  justify-content: center;
+  align-items: center;
 }
 
 .hours,
 .minutes,
 .seconds {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 220px;
   height: 220px;
-  font-size: 10rem;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 21px 20px 20px -11px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.am-pm {
-  font-size: 3rem;
-  align-self: end;
+.hour,
+.minute,
+.second {
+  font-size: 8rem;
+}
+
+span {
+  display: inline-block;
+  font-size: 1.5rem;
 }

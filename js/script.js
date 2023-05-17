@@ -1,6 +1,6 @@
-const hours = document.querySelector('.hours');
-const minutes = document.querySelector('.minutes');
-const seconds = document.querySelector('.seconds');
+const hours = document.querySelector('.hour');
+const minutes = document.querySelector('.minute');
+const seconds = document.querySelector('.second');
 const ampm = document.querySelector('.am-pm');
 const body = document.body;
 
@@ -17,9 +17,9 @@ setInterval(() => {
 
   if (h >= 18) {
     body.classList.add('night');
-    ampm.innerHTML = 'PM';
+    // ampm.innerHTML = 'PM';
   } else {
     body.classList.remove('night');
-    ampm.innerHTML = 'AM';
+    // ampm.innerHTML = 'AM';
   }
 }, 1000);
